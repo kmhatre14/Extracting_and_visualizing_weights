@@ -36,3 +36,7 @@ print(f.keys())
 layer = input("Enter the Layer Name: ")
 weights = getWeightsForLayer(layer,f)
 print(weights)
+if weights != None:
+    writer= open(layer,"w+")
+    writer.write(str(weights))
+writer.close()
